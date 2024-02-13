@@ -1,7 +1,7 @@
 requests
 pandas
-pyyaml
 numpy
 plotly
 matplotlib
 seaborn
+pymongo
