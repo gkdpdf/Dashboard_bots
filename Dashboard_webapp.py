@@ -51,9 +51,16 @@ with col1:
 
 with col2:
     # Create a line chart using Seaborn
-    st.write("### ROI %")
-    sns.set_style("whitegrid")
-    sns.lineplot(x='Date String', y='ROI % till date', data=b)
+    # st.write("### ROI %")
+    # sns.set_style("whitegrid")
+    # sns.lineplot(x='Date String', y='ROI % till date', data=b)
+    # st.pyplot()
+    # Compute the correlation matrix
+    corr = b.corr()
+    
+    # Create a correlation heatmap using Seaborn
+    st.write("### Correlation Heatmap")
+    sns.heatmap(corr, annot=True, cmap='coolwarm')
     st.pyplot()
     
    
