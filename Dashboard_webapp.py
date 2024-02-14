@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns 
-
+st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_page_config(layout="wide")
 
 from pymongo.mongo_client import MongoClient
