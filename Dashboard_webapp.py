@@ -41,9 +41,12 @@ import plotly.express as px
 
 col1, col2 = st.columns([5, 5])
 with col1:
-    df = px.data.gapminder().query("country=='Canada'")
-    fig = px.line(b, x="Date String", y="Cumulative Profit", title='Total Profit')
-    st.plotly_chart(fig, theme="streamlit")
+
+    
+    # Create a line chart using Seaborn
+    st.write("### Total Profit")
+    sns.lineplot(x='Date String', y='Cumulative Profit', data=b)
+    st.pyplot()
 
 with col2:
     df = px.data.gapminder().query("country=='Canada'")
