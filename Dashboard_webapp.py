@@ -56,7 +56,7 @@ with col2:
     # sns.lineplot(x='Date String', y='ROI % till date', data=b)
     # st.pyplot()
     # Compute the correlation matrix
-    c=b.drop(["Net Profit","ROI %","Cumulative Profit","ROI % till date"],axis=1)
+    c=b.drop(["Date String","Net Profit","ROI %","Cumulative Profit","ROI % till date"],axis=1)
     corr = c.corr()
     
     # Create a correlation heatmap using Seaborn
